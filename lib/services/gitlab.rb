@@ -4,7 +4,7 @@ class Service::GitLab < Service::Base
   title 'GitLab'
 
   string :url, :placeholder => 'https://gitlab.com', :label => 'Your GitLab URL:'
-  string :project, :placeholder => 'Namespace/Project Name', :label => 'Your GitLab Namespace/Project:'
+  string :project, :placeholder => 'Project Id', :label => 'Your Numeric GitLab Project Id:'
   password :private_token, :placeholder => 'GitLab Private Token', :label => 'Your GitLab Private Token:'
 
   def receive_verification
